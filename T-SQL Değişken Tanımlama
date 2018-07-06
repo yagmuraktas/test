@@ -1,0 +1,5 @@
+declare @isim varchar(20),@soyisim varchar(20),@yas int
+set @isim='Yağmur'
+set @soyisim='Aktaş'
+set @yas=25
+print @isim + ' ' + @soyisim + ' ' + @yas 
