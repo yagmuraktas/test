@@ -1,0 +1,13 @@
+declare @sayi1 int,@sayi2 int,@toplam int,@fark int,@carpim int,@bolme int
+set @sayi1=3 
+set @sayi2=2
+
+set @toplam=@sayi1+@sayi2
+set @fark=@sayi1-@sayi2
+set @carpim=@sayi1*@sayi2
+set @bolme=@sayi1/@sayi2
+
+print 'Sayıların Toplamı : '+ cast(@toplam as varchar(2))
+print 'Sayıların Farkı : '+ cast(@fark as varchar(2))
+print 'Sayıların Çarpımı : '+ cast(@carpim as varchar(2))
+print 'Sayıların Bölümü : '+ cast(@bolme as varchar(2))
