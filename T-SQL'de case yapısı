@@ -1,0 +1,9 @@
+select KitapAd,KitapFiyat,'durum'=
+case KitapFiyat
+when 4 then 'oldukça uygun fiyat...'
+when 8 then 'bir öncekine göre daha az uygun bir fiyat..'
+when 16 then 'fiyatlar gittikçfe artıyor...'
+when 24 then 'fazla pahalı gibi..'
+else 'fiyatı bilinmiyor.'
+end
+from Kitap
