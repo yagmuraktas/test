@@ -1,0 +1,10 @@
+declare @kitapsayi int 
+select @kitapsayi=COUNT(kitapadi) from Kitap2
+if(@kitapsayi <= 6)
+begin
+print 'Yeterli kitap içermektedir. '+ cast(@kitapsayi as varchar(2)) + ' adet vardır.'
+end
+else 
+begin
+print 'kitaplığınızdaki kitap kadar kitabımız yoktur.'
+end
