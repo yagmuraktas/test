@@ -1,0 +1,7 @@
+declare @sayi int
+set @sayi=1
+while(@sayi <=10)
+begin
+print cast(@sayi as varchar(3)) + ' - merhaba sql' 
+set @sayi=@sayi+1
+end
